@@ -13,7 +13,7 @@ console.log(studentProfile)
 
 //part2
 const {name:studentName}= studentProfile;
-const {age:studentAge}=studentProfile;
+const {age}=studentProfile;
 const {surname, ...rest}= studentProfile;
 console.log(rest);
 
@@ -27,10 +27,10 @@ const additionalInfo = {
     phoneNumber: "077-610-63-62"
 };
 
-const newobj ={
+const completeProfile ={
     ...studentProfile,
     ...additionalInfo
 };
 
-console.log(newobj);
+console.log(completeProfile);
 
