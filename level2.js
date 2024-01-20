@@ -15,10 +15,11 @@ delete employeeDetails.contact.email
 console.log(employeeDetails)
 
 //part2
-const {fullName:employeeName} = employeeDetails
-const {position} = employeeDetails
-const {contact} = employeeDetails
-const {...rest} = employeeDetails
+const {fullName:employeeName,
+       position,
+       contact,
+       ...rest
+    } = employeeDetails
 console.log(rest)
 
 //part3 
